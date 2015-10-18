@@ -1,0 +1,39 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.jarry.projectpsm.HomeActivity">
+
+    <item android:id="@+id/menu_Profile"
+        android:title="@string/menu_Profile"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/menu_Sales"
+        android:title="@string/menu_Sales"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/menu_SaledItem"
+        android:title="@string/menu_SaledItem"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/menu_Order"
+        android:title="@string/menu_Order"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/menu_About"
+        android:title="@string/menu_About"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/menu_logout"
+        android:title="@string/menu_logout"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/menu_Search"
+        android:title="@string/menu_Search"
+        android:icon="@mipmap/icon_search"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_Home"
+        android:title="@string/menu_Home"
+        android:icon="@mipmap/icon_home"
+        app:showAsAction="always" />
+</menu>

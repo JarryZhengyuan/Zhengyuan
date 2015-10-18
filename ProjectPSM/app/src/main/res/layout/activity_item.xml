@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.jarry.projectpsm.ItemActivity"
+    android:id="@+id/itemdisplayLayout"
+    android:background="#ffd3f1ff">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/DisplayItemDetail"
+        android:id="@+id/textView10"
+        android:textColor="#ff0a11ff"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/tv_item"
+        android:layout_alignStart="@+id/tv_item" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/pic_item"
+        android:src="@mipmap/human_icon"
+        android:contentDescription="@string/UserPhoto"
+        android:layout_below="@+id/textView10"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/pic_owner"
+        android:src="@mipmap/human_icon"
+        android:contentDescription="@string/UserPhoto"
+        android:layout_below="@+id/textView11"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/MoreDetail"
+        android:id="@+id/textView12"
+        android:textColor="#ffff1701"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        android:layout_alignBottom="@+id/pic_owner"
+        android:layout_alignLeft="@+id/textView11"
+        android:layout_alignStart="@+id/textView11" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_item"
+        android:text="Name"
+        android:layout_below="@+id/pic_item"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/Owner"
+        android:id="@+id/textView11"
+        android:textColor="#ff0a11ff"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/textView10"
+        android:layout_alignLeft="@+id/pic_owner"
+        android:layout_alignStart="@+id/pic_owner" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/btnLayout">
+
+        <Button
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Message"
+            android:id="@+id/btn_Call"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp" />
+
+        <Button
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Comment"
+            android:id="@+id/btn_Comment"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp" />
+
+        <Button
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Purchase"
+            android:id="@+id/btn_Purchase"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

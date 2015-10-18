@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.jarry.projectpsm.ProfileActivity"
+    android:id="@+id/profilelayout"
+    android:background="#ffd3f1ff">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/Profile"
+        android:id="@+id/textView6"
+        android:textColor="#ff0a11ff"
+        android:textSize="25dp"
+        android:textStyle="bold|italic"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/pic"
+        android:src="@mipmap/human_icon"
+        android:contentDescription="@string/UserPhoto"
+        android:layout_below="@+id/textView6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDetail"
+        android:layout_below="@+id/pic"
+        android:layout_toStartOf="@+id/pic"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="Name"
+        android:layout_marginBottom="10dp" />
+
+</RelativeLayout>

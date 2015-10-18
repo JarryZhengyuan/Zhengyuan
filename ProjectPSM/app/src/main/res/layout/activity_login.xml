@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".LoginActivity"
+    android:background="@android:color/holo_blue_bright"
+    android:id="@+id/layout_login">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:id="@+id/image_logo"
+        android:src="@mipmap/logo"
+        style="@style/Base.TextAppearance.AppCompat.Large.Inverse"
+        android:contentDescription="@string/logoPersell"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/PerSell"
+        android:id="@+id/txtLogo"
+        android:autoText="false"
+        android:textColor="#ff1425ff"
+        android:textStyle="bold"
+        android:textSize="@dimen/abc_action_bar_progress_bar_size"
+        android:typeface="serif"
+        android:layout_below="@+id/image_logo"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/SignIn"
+        android:id="@+id/btn_signIn"
+        android:background="#ff0e12ff"
+        android:textColor="#fffaf9ff"
+        android:layout_below="@+id/etPassword"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="31dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/SignUpForPerSell"
+        android:id="@+id/txt_signUp"
+        android:textStyle="bold"
+        android:textColor="#ff2220ff"
+        android:typeface="serif"
+        android:outlineProvider="bounds"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/txtLogo"
+        android:layout_alignEnd="@+id/txtLogo" />
+
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:id="@+id/etUsername"
+            android:hint="@string/UserName"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#fffffff9"
+            android:backgroundTint="#ffd0fffa"
+            android:layout_margin="5dp" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/etPassword"
+            android:hint="@string/Password"
+            android:layout_below="@+id/etUsername"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#fffffff9"
+            android:backgroundTint="#ffd0fffa"
+            android:layout_margin="5dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/btn_Insert"
+        android:layout_alignTop="@+id/txt_signUp" />
+
+</RelativeLayout>

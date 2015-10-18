@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.jarry.projectpsm.ProfileActivity">
+    <item android:id="@+id/profile_editUser" android:title="@string/profile_editProfile"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/profile_changePassword" android:title="@string/profile_ChangePassword"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/profile_editAcc" android:title="@string/profile_EditBankAcc"
+        android:orderInCategory="100" app:showAsAction="never" />
+</menu>

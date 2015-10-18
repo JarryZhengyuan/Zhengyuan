@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jarry.projectpsm" >
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".InsertActivity"
+            android:label="@string/title_activity_insert" >
+        </activity>
+        <activity
+            android:name=".UserRegister1Activity"
+            android:label="@string/title_activity_user_register1" >
+        </activity>
+        <activity
+            android:name=".UserRegister2Activity"
+            android:label="@string/title_activity_user_register2" >
+        </activity>
+        <activity
+            android:name=".UserRegister3Activity"
+            android:label="@string/title_activity_user_register3" >
+        </activity>
+        <activity
+            android:name=".HomeActivity"
+            android:label="PerSell" >
+        </activity>
+        <activity
+            android:name=".SalesActivity"
+            android:label="PerSell" >
+        </activity>
+        <activity
+            android:name=".ProfileActivity"
+            android:label="PerSell" >
+        </activity>
+        <activity
+            android:name=".EditProfileActivity"
+            android:label="PerSell" >
+        </activity>
+        <activity
+            android:name=".PasswordChangeActivity"
+            android:label="PerSell" >
+        </activity>
+        <activity
+            android:name=".ViewAccActivity"
+            android:label="PerSell" >
+        </activity>
+        <activity
+            android:name=".ItemActivity"
+            android:label="@string/title_activity_item" >
+        </activity>
+        <activity
+            android:name=".OwnerActivity"
+            android:label="@string/title_activity_owner" >
+        </activity>
+        <activity
+            android:name=".SearchActivity"
+            android:label="@string/title_activity_search" >
+        </activity>
+        <activity
+            android:name=".SoldActivity"
+            android:label="@string/title_activity_sold" >
+        </activity>
+        <activity
+            android:name=".SoldItemActivity"
+            android:label="@string/title_activity_sold_item" >
+        </activity>
+        <activity
+            android:name=".CommentActivity"
+            android:label="@string/title_activity_comment" >
+        </activity>
+        <activity
+            android:name=".ChatActivity"
+            android:label="@string/title_activity_chat" >
+        </activity>
+        <activity
+            android:name=".OrderActivity"
+            android:label="@string/title_activity_order" >
+        </activity>
+    </application>
+
+</manifest>
